@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>HelpMeOut</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-icon-left">
+                    <img src="./images/helpmeout.png" alt="help me out" />
+                    <span>HelpMeOut</span>
+                </div>
+                <div class="header-icon-right">
+                    <i class="fa-solid fa-gear"></i>
+                    <button class="x-mark">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="header-text">This extension helps you record and share help videos with ease.</p>
+        </div>
+        <div class="bottom">
+            <div class="tab-icon">
+                <div class="tab-icon-left">
+                    <i class="fa-solid fa-desktop"></i>
+                    <span>Full screen</span>
+                </div>
+                <div class="tab-icon-right">
+                    <i class="fa-regular fa-window-restore"></i>
+                    <span>Current Tab</span>
+                </div>
+            </div>
+            <div class="camera">
+                <div class="camera-left">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Camera</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="audio">
+                <div class="audio-left">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span>Audio</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button type="button" class="start-recording">
+                Start Recording
+            </button>
+        </div>
+    </div>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

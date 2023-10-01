@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    border-radius: 5rem;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #120b48;
+    overflow-x: hidden;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 1.5px;
+    bottom: .3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #120b48;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #120b48;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+    border: solid 0.2rem #120b48;
+}
+
+.container {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 1rem;
+}
+
+.header-icon-left {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header-icon-left img {
+    width: 30%;
+}
+
+.header-icon-left span {
+    display: inline-block;
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.header-icon-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.x-mark {
+    width: 1rem;
+    height: 1rem;
+    border: solid 0.1rem #b6b3c6;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    border-radius: 1rem;
+}
+
+.fa-gear {
+    font-size: 1.5rem;
+}
+
+.fa-xmark {
+    font-size: 1rem;
+    color: #b6b3c6;
+}
+
+.fa-desktop {
+    font-size: 2rem;
+    color: #928fab;
+}
+
+.fa-window-restore {
+    font-size: 2rem;
+}
+
+.header-text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #413c6d;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tab-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-icon-left,
+.tab-icon-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tab-icon-left {
+    color: #928fab;
+    font-weight: 500;
+}
+
+.tab-icon-right {
+    font-weight: 600;
+}
+
+.camera,
+.audio {
+    border: solid 0.1rem #100a42;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.camera-left,
+.audio-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.start-recording {
+    background-color: #100a42;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 0.1rem currentColor;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

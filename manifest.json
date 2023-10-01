@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut Screen Recorder",
+    "description": "It record's the user's screen",
+    "icons": {
+        "128": "/images//helpmeout.png",
+        "48": "/images//helpmeout.png",
+        "32": "/images//helpmeout.png",
+        "16": "/images//helpmeout.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images//helpmeout.png",
+            "32": "/images//helpmeout.png",
+            "128": "/images//helpmeout.png"
+        }
+    },
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "version": "1.0.0"
+}
