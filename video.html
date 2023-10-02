@@ -13,8 +13,8 @@
     <div class="container">
         <main class="main">
             <nav class="nav">
-                <a href="" class="home-link">
-                    <img src="" alt="" class="home-image" />
+                <a href="/" class="home-link">
+                    <img src="/images/helpmeout.png" alt="home icon" class="home-image" />
                     <span class="home-text">HelpMeOut</span>
                 </a>
                 <div class="home-center">
@@ -25,7 +25,7 @@
             </nav>
             <div class="hero">
                 <div class="hero-left">
-                    <h1 class="hero-left__header">Your video is ready</h1>
+                    <h1 class="hero-left__header">Your video is ready!</h1>
                     <div class="hero-left__center">
                         <span class="name-label">Name</span>
                         <div class="name-title-icon">
@@ -42,7 +42,7 @@
                     <div class="video-share">
                         <h3 class="video-url">Video Url</h3>
                         <label>
-                            <input type="text" placeholder="" default="https://www.google.com"/>
+                            <input id="url-input" type="text" placeholder="" value="https://www.google.com"/>
                             <button type="button" class="copy-btn">
                                 <i class="fa-regular fa-copy"></i>
                                 <span class="copy">Copy</span>
@@ -52,15 +52,15 @@
                     <div class="hero-left__bottom">
                         <h4 class="hero-left-video-share">Share your video</h4>
                         <div class="socials">
-                            <a class="socal-link" href="">
+                            <a class="social-link" href="">
                                 <i class="fa-brands fa-facebook"></i>
                                 <span>Facebook</span>
                             </a>
-                            <a class="socal-link" href="">
+                            <a class="social-link" href="">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 <span>WhatsApp</span>
                             </a>
-                            <a class="socal-link" href="">
+                            <a class="social-link" href="">
                                 <i class="fa-brands fa-telegram"></i>
                                 <span>Telegram</span>
                             </a>
@@ -68,12 +68,63 @@
                     </div>
                 </div>
                 <div class="hero-right">
-                    <video controls width="500">
-                        <source src="" type="video/webm"/>
+                    <video controls>
+                        <source 
+                            src="" 
+                            type="video/webm"
+                        />
                     </video>
+                    <div class="hero-right-transcript">
+                        <h2>Transcript</h2>
+                        <select title="transcript">
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                        </select>
+                        <p class="transcript-box">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Itaque blanditiis illum facilis deleniti deserunt velit aut, 
+                            eligendi labore consequatur sint, sit magni excepturi saepe 
+                            praesentium tenetur esse, quod laboriosam mollitia.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="account-section">
+                <p class="account-section__text">
+                    To ensure the availability and privacy of your video, 
+                    we recommend saving it to your account.
+                </p>
+                <button type="button" class="save-video">Save Video</button>
+                <p class="account-section__create">
+                    Don't have an account?
+                    <a href="" class="create-account-link">Create account</a>
+                </p>
+            </div>
         </main>
+        <footer class="footer">
+            <a href="/" class="footer-home-link">
+                <img src="/images/helpmeoutfooter.png" alt=""/>
+                <span class="footer-home-text">HelpMeOut</span>
+            </a>
+            <ul class="footer-links">
+                <li class="footer-link-header">Menu</li>
+                <li class="footer-link-sub"><a href="">Home</a></li>
+                <li class="footer-link-sub"><a href="">Converter</a></li>
+                <li class="footer-link-sub"><a href="">How it Works</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li class="footer-link-header">Menu</li>
+                <li class="footer-link-sub"><a href="">About</a></li>
+                <li class="footer-link-sub"><a href="">Contact Us</a></li>
+                <li class="footer-link-sub"><a href="">Privacy Policy</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li class="footer-link-header">Screen Record</li>
+                <li class="footer-link-sub"><a href="">Browser Window</a></li>
+                <li class="footer-link-sub"><a href="">Desktop</a></li>
+                <li class="footer-link-sub"><a href="">Application</a></li>
+            </ul>
+        </footer>
     </div>
     <script src="video.js"></script>
 </body>
