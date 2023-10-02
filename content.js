@@ -4,7 +4,7 @@ var recorder = null;
 
 let SESSION_ID;
 
-const START_SESSION = `http://codebee.pythonanywhere.com/api/start-session/`;
+const START_SESSION = `https://codebee.pythonanywhere.com/api/start-session/`;
 
 async function onAccessApproved(stream) {
     const chunks = [];
@@ -67,7 +67,7 @@ async function onAccessApproved(stream) {
         // chunks.push(recordedBlob);
 
         try {
-            const response = await fetch(`http://codebee.pythonanywhere.com/api/upload-chunk/${SESSION_ID}/`, 
+            const response = await fetch(`https://codebee.pythonanywhere.com/api/upload-chunk/${SESSION_ID}/`, 
                 {
                     method: 'POST',
                     body: formData
