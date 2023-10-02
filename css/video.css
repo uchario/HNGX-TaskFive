@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #120b48;
+    overflow-x: hidden;
+}
+
+.main {
+    padding: 4rem 8rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.home-link:link,
+.home-link:visited {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.936rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #100a42;
+}
+
+.home-link:active,
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.home-link img {
+    width: 40%;
+}
+
+.home-text {
+    display: inline-block;
+}
+
+.home-center {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-family: 'Work Sans';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.877rem;
+}
+
+.home-center a:link,
+.home-center a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.home-center a:hover,
+.home-center a:active {
+    text-decoration: underline;
+}
+
+.get-started:link,
+.get-started:visited {
+    text-decoration: none;
+    font-family: 'Sora';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #120b48;
+    line-height: 2.016rem;
+}
+
+.get-started:active,
+.get-started:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-right: 4rem;
+}
+
+.hero-left__header {
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5.67rem;
+    color: #141414;
+}
+
+.name-label {
+    color: #727272;
+    font-family: 'Sora';
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.016rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.name-title-icon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fa-pen-to-square {
+    font-size: 2rem;
+}
+
+.name-title {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.024rem;
+    color: #413c6d;
+}
+
+.link-send-receive label{
+    position: relative;
+    background-color: #e7e7ed;
+    padding: 1.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.6rem;
+    color: #b6b3c6;
+    width: 100%;
+}
+
+.link-send-receive input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #434343;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.111rem;
+    width: 50%;
+}
+
+.link-send-receive input::placeholder {
+    color: #434343;
+}
+
+.link-send-receive button {
+    background-color: #605c84;
+    border: solid 0.1rem transparent;
+    border-radius: 0.8rem;
+    padding: 1rem 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.link-send-receive button:hover {
+    background-color: #605c84cd;
+}
+
+.video-url {
+    color: #141414;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.52rem;
+    margin-bottom: 1rem;
+}
+
+.video-share label {
+    border: solid 0.05rem #929292;
+    background-color: #fafafa;
+    border-radius: 1.6rem;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-share input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.58rem;
+    color: #4b4b4b;
+}
+
+.video-share input::placeholder {
+    color: #4b4b4b;
+}
+
+.copy-btn {
+    border-radius: 0.8rem;
+    border: solid 0.01rem #120b48;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+}
+
+.hero-left-video-share {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+    color:  #08051e;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-link:link,
+.social-link:visited {
+    display: inline-block;
+    border-radius: 0.6rem;
+    border: solid 0.01rem #0a0628;
+    padding: 1.2rem 1.6rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #08051e;
+    text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:active {
+    background-color: #fafafa;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-whatsapp {
+    color: #25d366
+}
+
+.fa-telegram {
+    color: #2aabee;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    border-left: solid 0.1rem #bbb;
+    padding-left: 4rem;
+}
+
+.hero-right video {
+    border: solid 0.1rem #413c6d;
+    border-radius: 1rem;
+    width: 60rem;
+}
+
+.hero-right-transcript h2 {
+    margin-bottom: 1rem;
+}
+
+.hero-right-transcript h2 {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.024rem;
+    color: #000;
+}
+
+.hero-right-transcript select {
+    outline: none;
+    border: solid 0.1rem #cfcfcf;
+    padding: 0.8rem 1.6rem;
+    border-radius: .7rem;
+    width: 30%;
+    margin-bottom: 4rem;
+}
+
+.transcript-box {
+    height: 30rem;
+    border: solid 0.1rem #cfcfcf;
+    overflow-y: scroll;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 2.608rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding: 2rem;
+}
+
+.account-section {
+    text-align: center;
+    padding: 4rem 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.account-section__text {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.024rem;
+    color: #141414;
+}
+
+.save-video {
+    background-color: #120b48;
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    border: solid 0.1rem transparent;
+    color: #f9f9ff;
+    cursor: pointer;
+}
+
+.account-section__create {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.024rem;
+    color: #7e7e7e;
+}
+
+.account-section__create a:link,
+.account-section__create a:visited {
+    color: #120b48;
+}
+
+.account-section__create a:hover,
+.account-section__create a:active {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #120b48;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer-home-link:link,
+.footer-home-link:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 1rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.936rem;
+}
+
+.footer-home-link:hover,
+.footer-home-link:active {
+    text-decoration: underline;
+}
+
+.footer-home-link:link img {
+    width: 40%;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-link-header {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+}
+
+.footer-link-sub a:link,
+.footer-link-sub a:visited {
+    text-decoration: none;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.877rem;
+}
+
+.footer-link-sub a:hover,
+.footer-link-sub a:active {
+    text-decoration: underline;
+}
