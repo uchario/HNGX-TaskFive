@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #120b48;
+    overflow-x: hidden;
+}
+
 .main {
     max-width: 76rem;
     background-color: #e9ecef;
